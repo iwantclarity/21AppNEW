@@ -1,0 +1,39 @@
+{
+  "name": "21App",
+  "version": "1.0.0",
+  "description": "Helping fight bad habits in 21 days.",
+  "main": "server.js",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.15.2",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "latest",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.14.0",
+    "lodash": "^4.13.1",
+    "method-override": "^2.3.6",
+    "mysql": "^2.11.1",
+    "passport": "^0.3.2",
+    "passport-github2": "^0.1.10",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iwantclarity/21AppNEW.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "5.8.0"
+  },
+  "bugs": {
+    "url": "https://github.com/iwantclarity/21AppNEW/issues"
+  },
+  "homepage": "https://github.com/biwantclarity/21AppNEW#readme"
+}
