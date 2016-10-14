@@ -89,3 +89,9 @@ footer.page-footer {
 .whitelink {
   color: #ffffff;
 }
+
+h5 {
+  font-size: 17px;
+  text-align: justify;
+  line-height: normal;
+}
