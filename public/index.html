@@ -59,36 +59,111 @@
           <a class="whitelink" href="info.html"> <button id="info" class="btn waves-effect waves-light center collapsible purple darken-3" type="submit" name="action">Learn More</a>
           <i class="material-icons left">info</i>
         </div>
-          <ul class="collapsible" data-collapsible="accordion">
-            <h2 class="center purple-text text-darken-3">
-              <i class="material-icons itopnav medium">perm_identity</i></h2>
-            <li>
-              <div class="collapsible-header">
-                <h5 class="center padding-20">Get Started</h5>
-              </div>
-              <div class="collapsible-body">
 
-                <div class="input-field col s12">
-                      <input id="email" type="email" class="validate">
-                      <label for="email">Email</label>
-                </div>
+        <!--   log in   -->
+             <div class="row">
+             <div class="col s12 center white">
+                 <ul class="collapsible" data-collapsible="accordion">
+                   <h2 class="center purple-text text-darken-3">
+                     <i class="material-icons itopnav medium">perm_identity</i></h2>
+                   <li>
+                     <div class="collapsible-header">
+                       <h5 class="center padding-20">Log In</h5>
+                     </div>
+                     <div class="collapsible-body">
 
-                <div class="input-field col s12">
-                    <input id="password" type="password" class="validate">
-                    <label for="password">Password</label>
-                </div>
+                       <div class="input-field col s12">
+                             <input id="email" type="email" class="validate">
+                             <label for="email">Email</label>
+                       </div>
 
-                <button id="login" class="btn waves-effect waves-light center collapsible purple darken-3 " data-collapsible="expandable" type="submit" name="action">Sign In
-                <i class="material-icons left">check_circle</i>
+                       <div class="input-field col s12">
+                           <input id="password" type="password" class="validate">
+                           <label for="password">Password</label>
+                       </div>
 
-                <button id="signup" class="btn waves-effect waves-light center collapsible purple darken-3" data-collapsible="expandable" type="submit" name="action">Create Account
-                <i class="material-icons left">check_circle</i>
-                <br>
+                       <button id="login" class="btn waves-effect waves-light center collapsible purple darken-3" data-collapsible="expandable" type="submit" name="action">Sign In
+                       <i class="material-icons left">check_circle</i>
+                       <br>
 
-              </div> <!--end of dropdown-->
-            </li>
-          <p class="light center"><i>Change your life today.</i></p>
-        </div>
+                     </div> <!--end of dropdown-->
+                   </li>
+                 <p class="light center"><i>Sign in to your account.</i></p>
+               </div>
+             </div>
+
+
+               <div class="row">
+               <!-- sign up -->
+               <div class="col s12 center white">
+                   <ul class="collapsible" data-collapsible="accordion">
+                     <h2 class="center purple-text text-darken-3">
+                       <i class="material-icons itopnav medium">add_circle</i></h2>
+                     <li>
+                       <div class="collapsible-header">
+                         <h5 class="center padding-20">Sign Up</h5>
+                       </div>
+                       <div class="collapsible-body">
+
+                         <div class="row">
+                             <div class="input-field col s6">
+                               <input id="first_name" type="text" class="validate">
+                               <label for="first_name">First Name</label>
+                             </div>
+                             <div class="input-field col s6">
+                               <input id="last_name" type="text" class="validate">
+                               <label for="last_name">Last Name</label>
+                             </div>
+                           </div>
+
+                         <div class="input-field col s12">
+                               <input id="email" type="email" class="validate">
+                               <label for="email">Email</label>
+                         </div>
+
+                         <div class="input-field col s12">
+                             <input id="password" type="password" class="validate">
+                             <label for="password">Password</label>
+                         </div>
+
+                             <label>Habit To Break:</label>
+                                 <select class="browser-default center">
+                                   <option value="" disabled selected class="center">Select</option>
+                                   <option value="smoking">Smoking</option>
+                                   <option value="shopping">Shopping</option>
+                                   <option value="technology">Technology</option>
+                                 </select>
+
+
+                                 <form action="#">
+                                     <p class="center">
+                                       <input type="checkbox" id="smoking" />
+                                       <label for="smoking">I agree to the terms & conditions</label>
+                                     </p>
+
+                         <button id="login" class="btn waves-effect waves-light center collapsible purple darken-3" data-collapsible="expandable" type="submit" name="action">Sign Up
+                         <i class="material-icons left">check_circle</i>
+                         <br>
+
+                       </div> <!--end of dropdown-->
+                     </li>
+                   <p class="light center"><i>Create a new account.</i></p>
+                 </div>
+               </div>
+             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
                 </div> <!--end of dropdown-->
       </div>
@@ -107,6 +182,7 @@
   </div>
 
   <footer class="page-footer purple darken-3">
+
     <div class="container">
       <div class="row">
         <div class="col l12 s12">
@@ -130,7 +206,7 @@
   <script src="js/init.js"></script>
 
   <script type="text/javascript">
-    
+
     //If admin login username and password are admin, allow access to /admin
 $("#login").on("click", function(e) {
   e.preventDefault();
