@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var burger = require('../models/burger.js');
 var nodemailer = require('nodemailer');
-
+var path = require('path');
 //get route -> index
 router.get('/', function(req,res) {
 
@@ -44,12 +44,12 @@ router.put('/update', function(req,res){
 });
 
 //get route -> about
-router.get('/about', function(req,res) {
+router.get('/info', function(req,res) {
 
 	// Logging each request
 	console.log("URL requested: "+req.url);
 
-	res.render('about');
+	res.sendFile(path.join(__dirname + '/../public/info.html'));
 });
 
 
