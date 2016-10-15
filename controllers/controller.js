@@ -44,6 +44,11 @@ router.put('/update', function(req,res){
 });
 
 //get route -> about
+
+	app.get('/', function(req, res){
+		res.sendFile(path.join(__dirname + '/../public/index.html'));
+	});
+
 router.get('/info', function(req,res) {
 
 	// Logging each request
