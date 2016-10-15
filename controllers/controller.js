@@ -68,6 +68,22 @@ router.get('/index', function(req,res) {
 	res.sendFile(path.join(__dirname + '/../public/index.html'));
 });
 
+router.get('/world', function(req,res) {
+
+	// Logging each request
+	console.log("URL requested: "+req.url);
+
+	res.sendFile(path.join(__dirname + '/../public/world.html'));
+});
+
+router.get('/support', function(req,res) {
+
+	// Logging each request
+	console.log("URL requested: "+req.url);
+
+	res.sendFile(path.join(__dirname + '/../public/support.html'));
+});
+
 
 //get route -> recent
 router.get('/recent', function(req,res) {
