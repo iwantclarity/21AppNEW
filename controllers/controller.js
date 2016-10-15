@@ -3,6 +3,8 @@ var router = express.Router();
 var burger = require('../models/burger.js');
 var nodemailer = require('nodemailer');
 var path = require('path');
+
+var app = express();
 //get route -> index
 router.get('/', function(req,res) {
 
