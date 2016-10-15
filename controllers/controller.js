@@ -17,7 +17,7 @@ router.get('/', function(req,res) {
 });
 
 //post route -> back to index
-router.post('/create', function(req, res) {
+router.post('/auth', function(req, res) {
 
 	// Logging each request
 	console.log("URL requested: "+req.url);
@@ -50,6 +50,22 @@ router.get('/info', function(req,res) {
 	console.log("URL requested: "+req.url);
 
 	res.sendFile(path.join(__dirname + '/../public/info.html'));
+});
+
+router.get('/home', function(req,res) {
+
+	// Logging each request
+	console.log("URL requested: "+req.url);
+
+	res.sendFile(path.join(__dirname + '/../public/home.html'));
+})
+
+router.get('/index', function(req,res) {
+
+	// Logging each request
+	console.log("URL requested: "+req.url);
+
+	res.sendFile(path.join(__dirname + '/../public/index.html'));
 });
 
 

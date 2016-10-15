@@ -1,48 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>21</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>21 app</title>
 
-  <!--Style Sheets-->
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
-  <!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Lobster|Yellowtail" rel="stylesheet">
+
 </head>
-
-<header align="center">
-
-<br><br>
-<img src="/assets/images/21.logo" height="120px" width="120px">
-
-</header>
 <body>
 
-<div class="text-center">
+  <div id="index-banner" class="parallax-container z-depth-1">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <div class="row center">
+        </div>
+        <br><br>
 
-	 <h1 class="rowhead">21</h1>
-	<hr>
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-offset-3 col-xs-6">
-				<form method="POST" action="/login" class="button-size">
-				<textarea class="form-control" rows="1" type="text" name="burger_name"></textarea>First type in the burger you want then
-				<button type="submit" class="btn btn-info btn-sm">Build it!</button>
+      </div>
+    </div>
+    <div class="parallax"><img src="images/background1.jpg" alt="Unsplashed background img 1"></div>
+  </div>
 
-				</form>
+  <nav class="purple darken-3 z-depth-2" role="navigation">
+    <div class="nav-wrapper center text-white">
+      <ul class="text-white center navi">
+        <li><a href="me.html">Home</a></li>
+        <li><a href="world.html">World</a></li>
+        <li><a href="support.html">Support</a><i class="material-icons">favorite</i></li>
+      </ul>
+    </div>
+  </nav>
+
+	{{{body}}}
+
+	<footer class="page-footer purple darken-3">
+		<div class="container">
+			<div class="row">
+				<div class="col l12 s12">
+					<img src="images/safe-space-med.png" alt="safe space logo">
+				</div>
+
 			</div>
 		</div>
-	</div>
+		<div class="footer-copyright">
+			<div class="container">
+			Copyright 2016 <a class="brown-text text-lighten-3" href="http://safespace.com">Safe Space</a>
+			</div>
+		</div>
+	</footer>
 
-</div>
 
-<div>
-  								{{{body}}}
-</div>
+	<!--  Scripts-->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="js/materialize.js"></script>
+	<script src="js/init.js"></script>
 
-
-</body>
+	</body>
 </html>
